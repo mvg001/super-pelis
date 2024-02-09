@@ -20,6 +20,13 @@ export class ServicioPelisService {
       guardarPeliculas(this.pelis);
     }
   }
+  buscarPeli(titulo:string):Peli|undefined {
+    let posicion = this.pelis.findIndex((p) => p.title === titulo);
+    if (posicion >= 0) {
+      return {...this.pelis[posicion]};
+    }
+    return undefined;
+  }
   modificarPeli(titulo: string, peliModificada: Peli) {
     // TODO
   }

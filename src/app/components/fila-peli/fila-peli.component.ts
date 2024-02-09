@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { Peli } from '../../interfaces/peli';
 import { ServicioPelisService } from '../../services/servicio-pelis.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-fila-peli',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './fila-peli.component.html',
   styleUrl: './fila-peli.component.scss'
 })

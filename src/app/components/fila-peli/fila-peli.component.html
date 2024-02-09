@@ -3,4 +3,5 @@
     <div>{{pelicula.year}}</div>
     <img src={{pelicula.image}} alt="" width="200px">
     <button (click)="borrarPeli(pelicula.title)">🗑️</button>
+    <a [routerLink]="['/editar/'+pelicula.title]"><button>✍🏻</button></a>
 </div>
