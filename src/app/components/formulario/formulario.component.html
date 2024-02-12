@@ -1,6 +1,6 @@
 <div id="formulario">
     <input type="text" id="title" placeholder="Título" [(ngModel)]="pelicula.title">
     <input type="text" id="image" placeholder="Imagen" [(ngModel)]="pelicula.image">
-    <input type="text" id="year" placeholder="Año" [(ngModel)]="pelicula.year">
+    <input type="number" id="year" [(ngModel)]="pelicula.year">
     <button (click)="agregarPelicula()">+</button>
 </div>
